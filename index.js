@@ -15,6 +15,7 @@ if (!port) port = 8080;
 app.listen(port, () => {
   console.log(`App started. Listening at http://localhost:${port}`);
 })
+
 .on('error', function(err) {
   if (err.errno === 'EADDRINUSE')
     console.error(`Port ${port} busy.`);
